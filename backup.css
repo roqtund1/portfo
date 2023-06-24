@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    .p-2 {
+      display: block;
+    }
+    .profile {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 250px;
+      column-gap: 2rem;
+    }
+    .profile-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "a b"
+        "c c";
+    }
+    .contact {
+      justify-self: end;
+    }
+    .profile-text {
+      grid-area: c;
+      align-self: center;
+    }
+    .profile-text P:first-of-type {
+      margin-top: 0;
+    }
+    .profile-img {
+      height: 100%;
+      margin: 0;
+    }
+    .profile-title p {
+      margin-bottom: 0;
+    }
+  }
+
+  /* experiences */
+  @media screen and (min-width: 992px) {
+    .experiences-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2rem;
+    }
+  }
+
+  /* hobbies */
+  @media screen and (min-width: 992px) {
+    .hobbies-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2rem;
+    }
+  }
